@@ -1,0 +1,164 @@
+tremor_2016/stars
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/tremor_2016/tremor_2016_sparks
+			displacement 50 50 50 ~300
+			velocityType 		static
+			velocityDir 		linear
+			velocity 		280 0 0 ~0
+			velocityMagnitude 	200~50
+			accelerationType	static
+			accelerationDir		linear
+			acceleration		0 0 0 ~1
+			accelerationMagnitude	200
+			rotation 0 0 360
+			radius		0 60 20
+			alpha 0 0.2 0
+			lifeTime 15000
+			bounce cull
+		}
+		delay 0
+		count infinite
+		period 10000 - ~66%
+	}
+}
+
+tremor_2016/starsb
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/tremor_2016/tremor_2016_sparks
+			displacement 100 100 100 ~250
+			velocityType 		static
+			velocityDir 		linear
+			velocity 		360 0 0 ~0
+			velocityMagnitude 	200~50
+		
+			accelerationType	static
+			accelerationDir		linear
+			acceleration		0 0 0 ~1
+			accelerationMagnitude	200
+			rotation 0 0 360
+			radius		0 40 25
+			alpha 0 0.2 0
+			bounce cull
+			lifeTime 15000
+		}
+		delay 0
+		count infinite
+		period 6000 - ~40%
+	}
+}
+
+tremor_2016/engineblast
+{
+	ejector
+	{
+		particle
+		{
+			shader sync textures/tremor_2016/tremor_2016_sparksb
+			displacement 1 0 0 ~1
+			velocityType 		static
+			velocityDir 		linear
+			velocity 		360 0 0 ~0
+			velocityMagnitude 	200~50
+			accelerationType	static
+			accelerationDir		linear
+			acceleration		0 0 0 ~1
+			accelerationMagnitude	250
+			radius		80 65 40
+			alpha		1 0 0
+			lifeTime 150
+			overdrawProtection
+			//cullOnStartSolid
+		}
+		delay 0
+		count infinite
+		period 50 - ~50%
+	}
+	ejector
+	{
+		particle
+		{
+			shader sync textures/tremor_2016/tremor_2016_sparksb
+			displacement 2 2 2 ~5
+			velocityType 		static
+			velocityDir 		linear
+			velocity 		360 0 0 ~0
+			velocityMagnitude 	600~50
+			accelerationType	static
+			accelerationDir		linear
+			acceleration		0 0 0 ~1
+			accelerationMagnitude	250
+			radius		70 35 20
+			alpha		0.8 0.5 0
+			lifeTime 300
+			overdrawProtection
+			//cullOnStartSolid
+			dynamicLight    0 400 0 { 1.0 0.75 0.0 }
+	}
+		delay 0
+		count infinite
+		period 30 - ~50%
+	}
+	ejector
+	{
+		particle
+		{
+			shader sync textures/tremor_2016/tremor_2016_smoke
+			displacement 4 4 4 ~33
+			velocityType 		static
+			velocityDir 		linear
+			velocity 		360 0 0 ~0
+			velocityMagnitude 	400~50
+			accelerationType	static
+			accelerationDir		linear
+			acceleration		0 0 0 ~1
+			accelerationMagnitude	200
+			rotation 0 0 360
+			radius		0 0 300
+			alpha 0 0.3 0
+			lifeTime 6000
+		}
+		delay 0
+		count infinite
+		period 300 - ~100%
+	}
+}
+
+tremor_2016/spark
+{
+  ejector
+  {
+    particle
+    {
+		shader sync textures/tremor_2016/tremor_2016_sparks
+		displacement 0 0 0 0
+		velocityType		static
+		velocityDir		linear
+		velocityMagnitude	50
+		velocity		0 0 -1 ~50
+		accelerationType	static
+		accelerationDir		linear
+		acceleration		0 0 -1 ~5
+		accelerationMagnitude	250
+		radius		0 3 1
+		alpha		1200 .9 0
+		rotation	0 ~180 ~45`
+		bounce		0.0
+		radius 0 3.0 1.0
+		alpha  100 0.3 0.0
+		bounce 0.5
+		lifeTime 3500
+    }
+	count infinite
+	delay 4
+	period 2000 - ~50%
+  }
+}
+
