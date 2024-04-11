@@ -75,11 +75,11 @@ Some textures I have drawn for the map:
 [<img src="meta/preview_textures/6.jpg" width="100"/>](meta/preview_textures/6.jpg)
 
 ## Version History:
-| Version: | Date:        | Status: | Release Build (.pk3):       
-| ------- | ------------- | ------: | -----------------: |
-| 1.0     | 08/05/2016  | beta | :x:        |     
-| 1.1     | 10/05/2016  | beta | :x:        |     
-| 1.2     | 15/05/2016  | final | [💾](https://github.com/Masmblr/map-Tremor_2016_src/releases/) |
+| Version: | Date:        | Status: |
+| ------- | ------------- | ------: |
+| 1.0     | 08/05/2016  | beta |
+| 1.1     | 10/05/2016  | beta |  
+| 1.2     | 15/05/2016  | release |
 
 ## How-To
 **Binary**:
@@ -208,7 +208,7 @@ textures\tremor_2016\tremor_2016_turbine.tga <sup>[1](#Credit-1)</sup>
 ***
 
 ### Credit-1
-[Matthias "Masmblr Peters"](mailto:masmblr@gmail.com) \
+[Matthias "Masmblr" Peters](mailto:masmblr@gmail.com) \
 Content: Map, Textures, Shaders \
 License: Attribution-NonCommercial-ShareAlike 4.0 International \
 (See "LICENSE" file for more Informations.)
